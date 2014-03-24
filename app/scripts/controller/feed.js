@@ -21,46 +21,8 @@ TimeFeed.FeedController = {
 	},
 
 	loadDefault: function(){
-		// remote feeds
-		//var url = 'http://api.dev.1bot.co/feeds/timeinc/si.json';
-		//var url = 'http://api.dev.1bot.co/feeds/timeinc/health.json';
-		
-		// local feeds
-		// var url = 'feeds/timeinc/allyou.json';
-		// var url = 'feeds/timeinc/cookinglight.json';
-		// var url = 'feeds/timeinc/heath.json';
-		// var url = 'feeds/timeinc/people.json';
-		// var url = 'feeds/timeinc/peoplestylewatch.json';
 		var url = 'feeds/timeinc/all.json';
-
 		this.load(url);
-	},
-
-	loadCategory:function(cat){
-		console.log('FeedController.loadCategory');
-		console.log('	cat: ' + cat);
-
-		var catURL;
-
-		switch(cat){
-			case '/':
-				catURL = 'feeds/timeinc/all.json';
-			break;
-
-			case 'feed1':
-				catURL = 'feeds/timeinc/allyou.json';
-			break;
-
-			case 'feed2':
-				catURL = 'feeds/timeinc/cookinglight.json';
-			break;
-
-			case 'feed3':
-				catURL = 'feeds/timeinc/health.json';
-			break;
-		}
-
-		this.load(catURL);
 	},
 
 	load: function(path){
@@ -68,7 +30,7 @@ TimeFeed.FeedController = {
 		console.log('	API: ' + path);
 
 		var self = this;
-		var url = (this.useLocalFeeds) ? '' : 'http://api.dev.1bot.co/';
+		var url = (this.useLocalFeeds) ? '' : 'http://www.site.com';
 		var successCallback = $.proxy(this.onLoadCompleted, this);
 	    var errorCallback = $.proxy(this.onLoadError, this);
 	    var	formData = '';
@@ -91,14 +53,7 @@ TimeFeed.FeedController = {
 		console.log('FeedController.onLoadCompleted');
 		console.dir(response);
 
-		TimeFeed.MainModel.clear();
-
-		$.each(response.trending, function(index, val) {
-			 //console.log(val);
-			 TimeFeed.MainModel.add(val);
-		});
-
-		$(TimeFeed).trigger('trigger_renderfeeds');
+		//$(TimeFeed).trigger('trigger_renderfeeds');
 	},
 
 	onLoadError: function(xhr, status, error){

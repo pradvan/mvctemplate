@@ -1,5 +1,5 @@
-Time Feed
-=========
+JS MVC Template
+=================
 
 1. Make sure Node.js is installed and is in the PATH
 

@@ -14,21 +14,8 @@ TimeFeed.MainController = {
 		    switch(event.value){
 
 		    	case '/':
-		    		TimeFeed.FeedController.loadDefault();
+		    		TimeFeed.MainController.renderFeeds();
 		    	break;
-
-		    	case '/feed1':
-		    		TimeFeed.FeedController.loadCategory('feed1');
-		    	break;
-
-		    	case '/feed2':
-		    		TimeFeed.FeedController.loadCategory('feed2');
-		    	break;
-
-		    	case '/feed3':
-		    		TimeFeed.FeedController.loadCategory('feed3');
-		    	break;
-
 		    }
 		});  
 	},
