@@ -7,13 +7,13 @@ TimeFeed.HomeView = {
 	render: function(){
 		console.log('HomeView.render');
 
-		var template = JST['app/templates/item.hbs'];
+		var template = JST['app/templates/home.hbs'];
 
 		$('#content').empty();
 		$('#content').append(template());
 	},
 
 	destroy : function(){
-		console.log('destroy!');
+		console.log('HomeView.destroy');
 	}
 };
