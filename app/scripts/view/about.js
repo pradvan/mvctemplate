@@ -8,8 +8,6 @@ TimeFeed.AboutView = {
 		console.log('AboutView.render');
 
 		var template = JST['app/templates/about.hbs'];
-
-		$('#content').empty();
 		$('#content').append(template());
 	},
 

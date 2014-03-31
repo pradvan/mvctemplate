@@ -3,12 +3,11 @@ TimeFeed.MainController = {
 	init: function(){
 		console.log('MainController.init');
 
-		$(TimeFeed).on('trigger_renderfeeds', $.proxy(this.renderFeeds, this));
-
-		
 		$.address.change(function(event) {
 		    console.log('MainController.change: ' + event.value)
 
+		    $('#content').empty();
+		    
 		    switch(event.value){
 		    	case '/':
 		    		TimeFeed.HomeView.render();

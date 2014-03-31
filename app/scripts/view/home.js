@@ -8,8 +8,6 @@ TimeFeed.HomeView = {
 		console.log('HomeView.render');
 
 		var template = JST['app/templates/home.hbs'];
-
-		$('#content').empty();
 		$('#content').append(template());
 	},
 
