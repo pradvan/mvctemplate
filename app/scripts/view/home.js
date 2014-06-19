@@ -8,7 +8,10 @@ MVCTemplate.HomeView = {
 		console.log('HomeView.render');
 
 		var template = JST['app/templates/home.hbs'];
-		$('#MVCTemplate').append(template());
+		var templateModal = JST['app/templates/modal.hbs'];
+
+		$('#MVCTemplate').append(template({modalId: 'myModal'}));
+		$('.container').prepend(templateModal({modalId: 'myModal'}));
 	},
 
 	destroy : function(){

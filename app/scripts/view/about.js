@@ -8,10 +8,11 @@ MVCTemplate.AboutView = {
 		console.log('AboutView.render');
 
 		var template = JST['app/templates/about.hbs'];
+		
 		$('#MVCTemplate').append(template());
 	},
 
 	destroy : function(){
-		//console.log('AboutView.destroy');
+		console.log('AboutView.destroy');
 	}
 };

@@ -4,7 +4,7 @@ MVCTemplate.MainController = {
 		console.log('MainController.init');
 
 		$.address.change(function(event) {
-			console.log('MainController.change: ' + event.value)
+			console.log('MainController.change: ' + event.value);
 
 			$('#MVCTemplate').empty();
 
