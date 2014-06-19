@@ -1,9 +1,9 @@
-var TimeFeed = {
+var MVCTemplate = {
 	
 	// Application Constructor
     startup: function() {
-       console.log('TimeFeed.startup');
+       console.log('MVCTemplate.startup');
        
-       TimeFeed.MainController.init();
+       MVCTemplate.MainController.init();
     }
 };

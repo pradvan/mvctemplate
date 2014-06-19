@@ -1,3 +1,3 @@
 $(window).ready(function () {
-	TimeFeed.startup();
+	MVCTemplate.startup();
 });

@@ -1,4 +1,4 @@
-TimeFeed.HomeView = {
+MVCTemplate.HomeView = {
 
 	init: function(){
 		console.log('HomeView.init');
@@ -8,7 +8,7 @@ TimeFeed.HomeView = {
 		console.log('HomeView.render');
 
 		var template = JST['app/templates/home.hbs'];
-		$('#content').append(template());
+		$('#MVCTemplate').append(template());
 	},
 
 	destroy : function(){

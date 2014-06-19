@@ -1,5 +1,5 @@
-TimeFeed.MainModel = {
-	title: 'Time Feed',
+MVCTemplate.MainModel = {
+	title: 'MVCTemplate',
 	itemList: [],
 
 	add: function(item){

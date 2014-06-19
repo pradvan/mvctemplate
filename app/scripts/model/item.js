@@ -1,4 +1,4 @@
-TimeFeed.ItemModel = {
+MVCTemplate.ItemModel = {
 	title: undefined,
 	body: undefined,
 	url: undefined,

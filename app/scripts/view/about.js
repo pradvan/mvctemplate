@@ -1,4 +1,4 @@
-TimeFeed.AboutView = {
+MVCTemplate.AboutView = {
 
 	init: function(){
 		console.log('AboutView.init');
@@ -8,7 +8,7 @@ TimeFeed.AboutView = {
 		console.log('AboutView.render');
 
 		var template = JST['app/templates/about.hbs'];
-		$('#content').append(template());
+		$('#MVCTemplate').append(template());
 	},
 
 	destroy : function(){

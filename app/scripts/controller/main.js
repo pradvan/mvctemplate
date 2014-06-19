@@ -1,26 +1,26 @@
-TimeFeed.MainController = {
+MVCTemplate.MainController = {
 	
 	init: function(){
 		console.log('MainController.init');
 
 		$.address.change(function(event) {
-		    console.log('MainController.change: ' + event.value)
+			console.log('MainController.change: ' + event.value)
 
-		    $('#content').empty();
-		    
-		    switch(event.value){
-		    	case '/':
-		    		TimeFeed.HomeView.render();
-		    	break;
+			$('#MVCTemplate').empty();
 
-		    	case '/home':
-		    		TimeFeed.HomeView.render();
-		    	break;
+			switch(event.value){
+				case '/':
+					MVCTemplate.HomeView.render();
+				break;
 
-		    	case '/about':
-		    		TimeFeed.AboutView.render();
-		    	break;
-		    }
-		});  
+				case '/home':
+					MVCTemplate.HomeView.render();
+				break;
+
+				case '/about':
+					MVCTemplate.AboutView.render();
+				break;
+			}
+		});
 	}
 };
