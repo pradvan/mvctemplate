@@ -1,17 +1,13 @@
-JS MVC Template
-=================
+#JS MVC Template#
+JavaScript MVC based approach to building a single page application.
 
-1. Make sure Node.js is installed and is in the PATH
+##Installation##
+Make sure Node.js is installed on your system and that it is in the PATH. Clone project and run the following one at a time:
 
-2. git clone
+nmp install
 
-3. install dependencies (run in project folder, one at a time):
+bower install
 
-	nmp install
-	bower install
-	grunt build
-	grunt server
+grunt build
 
-4. ???
-
-5. Profit
+grunt serve
