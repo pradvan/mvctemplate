@@ -3,11 +3,11 @@ JavaScript MVC based approach to building a single page application.
 
 ##Technology stack##
 ###Libraries###
-jQuery
-Bootstrap
-Handlebars
-SASS
-jQuery.address
+- jQuery
+- Bootstrap
+- Handlebars
+- SASS
+- jQuery.address
 
 ###Tools###
 Bower for dependency management
@@ -26,10 +26,7 @@ Grunt for automatic functionality
 ##Installation##
 Make sure Node.js is installed on your system and that it is in the PATH. Clone project and run the following one at a time:
 
-npm install
-
-bower install
-
-grunt build
-
-grunt serve
+1. npm install
+2. bower install
+3. grunt build
+4. grunt serve
