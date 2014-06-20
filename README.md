@@ -11,7 +11,8 @@ JavaScript MVC based approach to building a single page application.
 
 ###Tools###
 Bower for dependency management
-Grunt for automatic functionality
+
+Grunt for automation:
 - JSHint
 - JS & CSS minification
 - Compass
